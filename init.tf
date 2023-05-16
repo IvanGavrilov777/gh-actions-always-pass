@@ -10,7 +10,7 @@ terraform {
 provider "random" {
   # Configuration options
 }
-resource "random_pet" {}
+resource "random_pet" "random_pet" {}
 output "random_pet_id" {
   value = random_pet.id
 }
